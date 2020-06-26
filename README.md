@@ -1,4 +1,5 @@
-Project Objectives :
+# Data Modeling with Postgres
+### Project Objectives :
 The Main goal of this project is to load Log Data of Song Dataset, and events log and processed data into Postgresql Database.
 The structure of our data source is jason files, These files divided to two types, first one contains data for songs and artists, second file describes user data and events for chosen songs and artists.  
 the database structure is simple star schema contains dimension and fact table.
@@ -10,7 +11,7 @@ the database structure is simple star schema contains dimension and fact table.
 * time table is the date and time dimension for the start schema model.
 * users table contains all registered users that using the music library.
 to load these dimension tables, primary key should be identified for each dimension. according that small analysis happened using sql queries to identify the uniqness for each column.
-
+### ETL Process
 ----------------------------------
 during data loding some duplication existed, for dimension data will be updated except time table because time table calculated during runtime.
 
